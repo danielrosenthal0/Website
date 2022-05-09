@@ -1,0 +1,15 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: darkgrey;
+    
+}
+p {
+    text-align: center;
+}
+.topnav {
+    background-color: aquamarine;
+    text-align: center;
+}
+.link {
+font-family: sans-serif;
+}

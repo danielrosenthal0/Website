@@ -1,5 +1,7 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: bookman-jf-pro,serif;
+    font-weight: 400;
+    font-style: italic;
     background-color: darkgrey;
     
 }
@@ -9,6 +11,7 @@ p {
 .topnav {
     background-color: aquamarine;
     text-align: center;
+    display: flex;
 }
 .link {
 font-family: sans-serif;

@@ -3,28 +3,16 @@
     font-weight: 400;
     font-style: italic;
     background-color: darkgrey;
-    
-}
-h1 {
     text-align: center;
-    
 }
 p {
-    text-align: center;
     font-family: soleil,sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgb(0, 0, 0);
 }
-.topnav {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-}
-.page {
-
-}
-.link {
-font-family: sans-serif;
+ul, li{
+    text-align: left;
+    font-family: soleil,sans-serif;
+font-weight: 400;
+font-style: normal;
 }

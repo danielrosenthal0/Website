@@ -2,8 +2,10 @@
     font-family: bookman-jf-pro,serif;
     font-weight: 400;
     font-style: italic;
-    background-color: darkgrey;
+    background-color: rgb(111, 171, 165);
     text-align: center;
+    text-decoration: none;
+    color:rgb(31, 29, 31);
 }
 p {
     font-family: soleil,sans-serif;
@@ -13,6 +15,6 @@ p {
 ul, li{
     text-align: left;
     font-family: soleil,sans-serif;
-font-weight: 400;
-font-style: normal;
+    font-weight: 400;
+    font-style: normal;
 }

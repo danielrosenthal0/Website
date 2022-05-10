@@ -2,8 +2,9 @@
     font-family: bookman-jf-pro,serif;
     font-weight: 400;
     font-style: italic;
-    background-color: darkgrey;
-    
+    background-color: rgb(111, 171, 165);
+    text-decoration: none;
+    text-align: center;
 }
 h1 {
     text-align: center;
@@ -22,9 +23,13 @@ p {
     justify-content: center;
     gap: 8px;
 }
-.page {
-
+.buttons {
+    text-align: center;
 }
 .link {
 font-family: sans-serif;
+}
+a { 
+    color:rgb(31, 29, 31);
+    text-decoration: none;
 }

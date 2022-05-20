@@ -1,14 +1,20 @@
 * {
+    
+}
+.container {
     font-family: bookman-jf-pro,serif;
     font-weight: 400;
     font-style: italic;
-    background-color: rgb(111, 171, 165);
     text-decoration: none;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(167, 167, 167);
 }
 h1 {
     text-align: center;
-    
 }
 p {
     text-align: center;
@@ -18,13 +24,18 @@ p {
     color: rgb(0, 0, 0);
 }
 .topnav {
-    text-align: center;
     display: flex;
-    justify-content: center;
-    gap: 8px;
-}
-.buttons {
     text-align: center;
+    justify-content: center;
+    gap: 24px;
+    background-color: rgb(112, 112, 112);
+}
+.bottomnav {
+    display: flex;
+    justify-content: center ;
+    gap: 24px;
+    padding-top: 48px;
+    
 }
 .link {
 font-family: sans-serif;
@@ -32,4 +43,12 @@ font-family: sans-serif;
 a { 
     color:rgb(31, 29, 31);
     text-decoration: none;
+}
+img {
+    width: 1000px;
+    height: 500px;
+}
+.button {
+   
+    
 }

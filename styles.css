@@ -1,41 +1,61 @@
-* {
-    
-}
-.container {
-    font-family: bookman-jf-pro,serif;
-    font-weight: 400;
-    font-style: italic;
-    text-decoration: none;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(167, 167, 167);
-}
-h1 {
-    text-align: center;
-}
-p {
-    text-align: center;
-    font-family: soleil,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(0, 0, 0);
+.uzi {
+    width: 50px;
+    height: 50px;
 }
 .topnav {
     display: flex;
-    text-align: center;
-    justify-content: center;
-    gap: 24px;
-    background-color: rgb(112, 112, 112);
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(191, 191, 191);
+}
+.pages {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    gap: 16px;
+}
+.page {
+    font-family: articulat-cf,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+}
+.uzi {
+    border-radius: 8px;
+}
+.title {
+    font-family: articulat-heavy-cf,sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 48px;
+}
+.intro {
+    font-family: articulat-cf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .bottomnav {
     display: flex;
-    justify-content: center ;
-    gap: 24px;
-    padding-top: 48px;
-    
+    justify-content: center;
+    padding: 12px;
+    gap: 16px;
+    background-color:rgb(191, 191, 191);
+}
+.content {
+    background-color:rgb(150, 148, 148);
+    display: flex;
+    justify-content: center;
+}
+.button {
+    font-family: articulat-cf,sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 .link {
 font-family: sans-serif;

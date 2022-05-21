@@ -39,10 +39,14 @@
     font-family: articulat-cf,sans-serif;
     font-weight: 400;
     font-style: normal;
+    width: 300px;
+    text-align: center;
+    font-size: 24px;
 }
 .bottomnav {
     display: flex;
     justify-content: center;
+    margin-top: auto;
     padding: 12px;
     gap: 16px;
     background-color:rgb(191, 191, 191);
@@ -51,24 +55,26 @@
     background-color:rgb(150, 148, 148);
     display: flex;
     justify-content: center;
+    align-items:flex-start;
+    padding: 64px;
+    flex-grow: 1;
 }
 .button {
     font-family: articulat-cf,sans-serif;
     font-weight: 700;
     font-style: normal;
 }
-.link {
-font-family: sans-serif;
-}
+
 a { 
     color:rgb(31, 29, 31);
     text-decoration: none;
 }
-img {
-    width: 1000px;
-    height: 500px;
+.active {
+    text-decoration: underline;
 }
-.button {
-   
-    
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
 }

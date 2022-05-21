@@ -71,6 +71,9 @@ a {
 }
 .active {
     text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: aquamarine;
+    text-underline-offset: 3px;
 }
 .flexbox {
     display: flex;

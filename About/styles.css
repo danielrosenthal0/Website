@@ -79,3 +79,8 @@ a {
 .cannon {
     padding: 16px
 }
+.paragraphs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

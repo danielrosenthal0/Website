@@ -1,6 +1,7 @@
 .uzi {
     width: 50px;
     height: 50px;
+    border-radius: 8px;
 }
 .topnav {
     display: flex;
@@ -27,9 +28,6 @@
     gap: 16px;
     padding: 12px;
 }
-.uzi {
-    border-radius: 8px;
-}
 .title {
     font-family: articulat-heavy-cf,sans-serif;
     font-weight: 900;
@@ -48,7 +46,7 @@
     background-color:rgb(150, 148, 148);
     display: flex;
     justify-content: center;
-    align-items:flex-start;
+    align-items:center;
     padding: 64px;
     flex-grow: 1;
     font-family: articulat-cf,sans-serif;
@@ -78,7 +76,10 @@ a {
     justify-content: flex-start;
 }
 .cannon {
-    padding: 16px
+    padding: 16px;
+    border-radius: 36px;
+    width: 300px;
+    height:450px;
 }
 .paragraphs {
     display: flex;

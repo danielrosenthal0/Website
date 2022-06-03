@@ -75,3 +75,47 @@ a {
     min-height: 100vh;
     justify-content: flex-start;
 }
+
+
+
+
+
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    padding: 48px;
+    
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 48px;
+    
+}
+.etch-a-sketch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 48px;
+}
+h1 {
+    font-family: articulat-cf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+button {
+    font-family: articulat-cf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-style: none;
+    background-color: aquamarine;
+    margin: 12px;
+    border-radius: 8px;
+}

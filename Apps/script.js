@@ -53,7 +53,7 @@ function applyReset() {
     function resetGrid() {
         const cells = document.querySelectorAll('.cell');
         cells.forEach((cell) => {
-            cell.style.backgroundColor = 'white';
+            cell.style.backgroundColor = 'rgb(150, 148, 148)';
         })
     }
 }
@@ -65,7 +65,7 @@ adjust.addEventListener('click',getSize);
 
 //gets size from user
 function getSize() {
-    gridSize = parseInt(prompt('Select the number of squares for length/height'));
+    gridSize = parseInt(prompt('Select the number of squares for length/height (25 or less)'));
     if (gridSize > 25) {
         alert('Too many squares')
     } else {

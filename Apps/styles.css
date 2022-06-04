@@ -75,6 +75,9 @@ a {
     min-height: 100vh;
     justify-content: flex-start;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 
 
 
@@ -88,14 +91,15 @@ a {
     align-items: center;
     width: 600px;
     height: 600px;
-    padding: 48px;
-    
+    padding: 72px;
+    margin: 48px;
+    background-color:rgb(150, 148, 148);
 }
 
 .buttons {
     display: flex;
     justify-content: center;
-    padding: 48px;
+    padding: 12px;
     
 }
 .etch-a-sketch {
@@ -104,10 +108,11 @@ a {
     justify-content: center;
     flex-direction: column;
     padding: 48px;
+    background-color:rgb(150, 148, 148);
 }
 h1 {
     font-family: articulat-cf,sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
 }
 button {

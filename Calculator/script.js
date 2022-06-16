@@ -33,3 +33,24 @@ function operate (operand,x,y) {
 }
 // testing operate function, passing it a string at the moment and im not sure thats the best strategy
 console.log(operate('divide',3,4));
+
+//creating variables for current and previous numbers
+
+let previous = 0;
+let current = undefined;
+//adding listeners to calculator buttons to show on display
+const numbers = document.querySelectorAll('.number');
+numbers.forEach((number) => {
+    number.addEventListener('click',displayNumber);
+    
+})
+function displayNumber() {
+    if (current === undefined) {
+        current = this.id;
+    } else {
+        current = "" + current + this.id;
+    }
+    const currentDisplay = document.querySelector('.current');
+    currentDisplay.innerHTML = current;
+    return current;
+}

@@ -37,20 +37,39 @@ console.log(operate('divide',3,4));
 //creating variables for current and previous numbers
 
 let previous = 0;
-let current = undefined;
-//adding listeners to calculator buttons to show on display
+let current = 0;
+let operand = undefined;
+//adding listeners to calculator buttons to show on display, 
 const numbers = document.querySelectorAll('.number');
 numbers.forEach((number) => {
     number.addEventListener('click',displayNumber);
-    
+    number.addEventListener('mouseover',scale); //need to fix
+})
+const operators = document.querySelectorAll('.operator');
+operators.forEach((operator) => {
+    operator.addEventListener('click',moveCurrent);
 })
 function displayNumber() {
-    if (current === undefined) {
+    if (current === 0) {
         current = this.id;
-    } else {
+    }
+    else {
         current = "" + current + this.id;
     }
     const currentDisplay = document.querySelector('.current');
     currentDisplay.innerHTML = current;
     return current;
+}
+function moveCurrent() {
+    previous = current;
+    current = 0;
+    const previousDisplay = document.querySelector('.previous');
+    previousDisplay.innerHTML = previous + this.id;
+    const currentDisplay = document.querySelector('.current');
+    currentDisplay.innerHTML = current;
+    
+}
+//need to fix
+function scale() {
+    this.style.scale = '1.2';
 }

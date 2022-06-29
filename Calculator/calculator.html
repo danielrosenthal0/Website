@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/cqd5ekv.css">
+    <link rel="icon" href="../me_as_uzi.png">
+</head>
+<body style="margin: 0;">
+    <div class="flexbox">
+        <div class="topnav">
+            <div class="left">
+                <img class="uzi" src="../me_as_uzi.png">
+                <p class="title">Daniel Rosenthal</p>
+            </div>
+            
+            <div class="pages">
+                <a class="page" href="../index.html">Home</a>
+                <a class="page" href="../About/About.html">About</a>
+                <a class="page" href="../Projects/Projects.html">Projects</a>
+                <div class="dropdown">
+                    <a class="dropbutton page active" href="#">Apps
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a class="page" href="../Etch-a-sketch/Etch-a-sketch.html">Etch-a-sketch</a>
+                        <a class="page active" href="../Calculator/Calculator.html">Calculator</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calculator">
+            <div class="calculator-border">
+                <div class="calculator-screen">
+                        <p class="previous"></p>
+                        <p class="current"></p>
+                </div>
+                <div class="buttons">
+                    <div class="numbers">
+                        <div class="row1">
+                            <button class="number" id="1">1</button>
+                            <button class="number" id="2">2</button>
+                            <button class="number" id="3">3</button>
+                        </div>
+                       <div class="row2">
+                            <button class="number" id="4">4</button>
+                            <button class="number" id="5">5</button>
+                            <button class="number" id="6">6</button>
+                       </div>
+                       <div class="row3">
+                            <button class="number" id="7">7</button>
+                            <button class="number" id="8">8</button>
+                            <button class="number" id="9">9</button>
+                       </div>
+                       <div class="row4">
+                            <button class="number" id="0">0</button>
+                            <button class="number" id=".">.</button>
+                            <button class="number" id="-">(-)</button>
+                        </div>
+                   </div>
+                   <div class="operators">
+                        <button class = "operator" id="+">+</button>
+                        <button class = "operator" id="-">-</button>
+                        <button class = "operator" id="*">*</button>
+                        <button class = "operator" id="/">/</button>
+                        <button class="equal">=</button>
+                        <button class="clear">C</button>
+                    </div>
+                </div>
+               
+                </div>
+            </div>
+        </div>
+        <div class="bottomnav"> 
+            <a class = "button" href = "mailto: daniel.b.rosenthal@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+            <a class = "button" href = "https://www.linkedin.com/in/daniel-b-rosenthal/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class = "button" href = "https://github.com/danielrosenthal0" target="_blank" rel="noopener noreferrer">Github</a>
+            <a class = "button" href = "Daniel_Rosenthal_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a class = "button" href = "https://open.spotify.com/user/drose28?si=517432039fb04bd9" target ="_blank" rel="noopener noreferrer">Spotify</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

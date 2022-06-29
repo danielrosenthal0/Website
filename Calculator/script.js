@@ -1,9 +1,9 @@
 // basic math operators
 function add (x,y) {
-    return (x + y);
+    return Number(x) + Number(y);
 }
 function subtract (x,y) {
-    return (x - y);
+    return Number(y) - Number(x);
 }
 function multiply (x,y) {
     return (x * y);
@@ -11,34 +11,38 @@ function multiply (x,y) {
 function divide (x,y) {
     return (x / y);
 }
-// testing math operators
-console.log(add(1,2));
-console.log(subtract(1,2));
-console.log(multiply(5,2));
-console.log(divide(15,3));
 
 //operate function
 function operate (operand,x,y) {
-    if (operand === 'add') {
-        return add(x,y);
-    } else if (operand === 'subtract') {
-        return subtract(x,y);
-    } else if (operand === 'multiply') {
-        return multiply(x,y);
-    } else if (operand === 'divide') {
-        return divide(x,y);
+    if (operand === '+') {
+         answer = add(x,y);
+    } else if (operand === '-') {
+         answer = subtract(x,y);
+    } else if (operand === '*') {
+         answer = multiply(x,y);
+    } else if (operand === '/') {
+         answer = divide(x,y);
     } else {
-        return;
+        
     }
+    const currentDisplay = document.querySelector('.current');
+    currentDisplay.innerHTML = answer;
+    const previousDisplay = document.querySelector('.previous');
+    previousDisplay.innerHTML = previous + " " + operand + " " + current + " =";
+    console.log(answer);
+    return answer;
+    
+    
 }
 // testing operate function, passing it a string at the moment and im not sure thats the best strategy
-console.log(operate('divide',3,4));
+
 
 //creating variables for current and previous numbers
-
+let answer = 0;
 let previous = 0;
 let current = 0;
 let operand = undefined;
+let firstIteration = true;
 //adding listeners to calculator buttons to show on display, 
 //displaying numbers, changing scale on hover but it doesnt work completely yet
 const numbers = document.querySelectorAll('.number');
@@ -56,7 +60,11 @@ const clears = document.querySelectorAll('.clear');
 clears.forEach((clear) => {
     clear.addEventListener('click',clearNum);
 })
-
+//equals /operate listener
+const operates = document.querySelectorAll('.equal');
+operates.forEach((equal) => {
+    equal.addEventListener('click',function() {operate(operand,current,previous);});
+})
 
 
 //displaying a number when the listener is activated
@@ -69,17 +77,34 @@ function displayNumber() {
     }
     const currentDisplay = document.querySelector('.current');
     currentDisplay.innerHTML = current;
-    
+    return current;
 }
 //moving the current number to the previous when operation is pressed
 //NEED TO STORE THE OPERATOR SOMEHOW TO DO THE MATH, maybe add an id and if statements
 function moveCurrent() {
-    previous = current;
-    current = 0;
-    const previousDisplay = document.querySelector('.previous');
-    previousDisplay.innerHTML = previous + this.id;
-    const currentDisplay = document.querySelector('.current');
-    currentDisplay.innerHTML = current;
+    if (firstIteration === true) {
+        previous = current;
+        current = 0;
+        operand = this.id;
+        const previousDisplay = document.querySelector('.previous');
+        previousDisplay.innerHTML = previous + " " + this.id;
+        const currentDisplay = document.querySelector('.current');
+        currentDisplay.innerHTML = current;
+        console.log(operand);
+        firstIteration = false;
+        return previous, operand;
+    } else {
+        previous = answer;
+        current = 0;
+        operand = this.id;
+        const previousDisplay = document.querySelector('.previous');
+        previousDisplay.innerHTML = previous + " " + this.id;
+        const currentDisplay = document.querySelector('.current');
+        currentDisplay.innerHTML = current;
+        console.log(operand);
+        firstIteration = false;
+        return previous, operand;
+    }
     
 }
 //need to fix
@@ -92,9 +117,12 @@ function clearNum() {
     current = 0;
     previous = 0;
     operand = undefined;
+    answer = undefined;
     const currentDisplay = document.querySelector('.current');
     currentDisplay.innerHTML = current;
+
     const previousDisplay = document.querySelector('.previous');
     previousDisplay.innerHTML = previous + this.id;
-    //moveCurrent();
+    
 }
+console.log(answer);

@@ -15,13 +15,13 @@ function divide (x,y) {
 //operate function
 function operate (operand,x,y) {
     if (operand === '+') {
-         answer = add(x,y);
+         answer = add(x,y).toFixed(5);
     } else if (operand === '-') {
-         answer = subtract(x,y);
+         answer = subtract(x,y).toFixed(5);
     } else if (operand === '*') {
-         answer = multiply(x,y);
+         answer = multiply(x,y).toFixed(5);
     } else if (operand === '/') {
-         answer = divide(x,y);
+         answer = divide(x,y).toFixed(5);
     } else {
         
     }

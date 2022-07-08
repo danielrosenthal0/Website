@@ -122,10 +122,10 @@ a {
 
   /* calculator style */
   .calculator-border {
-      width: 430px;
+      width: 415px;
       height: 520px;
       border-color: black;
-      border-style: solid;
+      border-style: none;
       border-radius: 8px;
       display: flex;
       flex-direction: column;
